@@ -1,0 +1,82 @@
+:root {
+    --cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --gray-blue: hsl(227, 10%, 46%);
+    --gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    height: auto;
+    border-radius: 1rem;
+    
+    margin: 5rem auto;
+    background-color: white;
+
+    
+
+    
+}
+
+.card-container header img {
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 2rem;
+}
+
+.profile img {
+    background-color: white;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
+
+
+
+.profile span{
+    font-size: 1.13rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+
+}
+
+.profile p:first-of-type {
+    font-size: 1.13rem;
+    color: var(--gray-blue);
+}
+
+.profile p {
+    color: var(--gray-blue);
+}
+
+.line {
+    display: flex;
+    border: 0.1px solid var(--gray);
+    margin: 2rem 0 2rem;
+}

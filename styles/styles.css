@@ -16,6 +16,22 @@ body {
     background-color: hsl(185, 75%, 39%);
 }
 
+.background-images img:first-of-type{
+    position: absolute;
+    z-index: -1;
+
+    top: -40rem;
+    left: -20rem;
+}
+
+.background-images img + img{
+    position: absolute;
+    z-index: -1;
+
+    top: 20rem;
+    left: 40rem;
+}
+
 
 .container {
     display: flex;
@@ -82,9 +98,10 @@ body {
 .line {
     display: flex;
 
-    border: 0.1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
     margin: 2rem 0 2rem;
     width: 100%;
+    opacity: 0.3;
 }
 
 .stats {
